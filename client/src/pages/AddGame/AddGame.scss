@@ -1,0 +1,47 @@
+.add-form {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+
+  > input.search {
+    flex: 3;
+    margin: 0 32px;
+    height: 50px;
+  }
+
+  button {
+    color: #fff;
+    background-color: #262524;
+    border: 0;
+    cursor: pointer;
+    text-shadow: 3px 2px rgba(0, 166, 232, 0.51);
+  }
+}
+
+.results-container {
+  display: grid;
+  grid-gap: 32px 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.MuiPagination-root {
+  display: flex;
+}
+
+.MuiPagination-ul {
+  margin: 16px auto !important;
+
+  li button {
+    font-family: "press_start_kregular", serif;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: -0.1em;
+  }
+}
+
+.MuiPaginationItem-page.Mui-selected {
+  background-color: transparent !important;
+  text-decoration: underline white;
+}

@@ -1,0 +1,89 @@
+.navigation {
+  display: flex;
+  margin: 16px 0;
+}
+
+.section_8bit {
+  background-color: rgb(38, 37, 36);
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  box-sizing: border-box;
+  float: left;
+  margin: 10px 0;
+  position: relative;
+  font-size: 20px;
+  text-shadow: 3px 2px rgba(0, 166, 232, 0.51);
+  width: 100%;
+
+  .wrapper {
+    border-bottom: 10px solid #fff;
+    border-top: 10px solid #fff;
+    color: #fff;
+    margin: -10px 0;
+
+    &::before {
+      bottom: -5px;
+      left: -5px;
+    }
+
+    &::after {
+      bottom: -5px;
+      right: -5px;
+    }
+  }
+
+  &::before {
+    left: -5px;
+    top: -5px;
+  }
+
+  &::after {
+    right: -5px;
+    top: -5px;
+  }
+}
+
+.section_8bit::before,
+.section_8bit::after,
+.section_8bit .wrapper::before,
+.section_8bit .wrapper::after {
+  background: rgb(255, 255, 255);
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.header-menu {
+  text-align: center;
+
+  li {
+    padding: 16px 48px;
+
+    &:hover {
+      cursor: pointer;
+
+      .arrowLink {
+        text-decoration: none;
+      }
+
+      .arrowLink:before {
+        display: block;
+        left: 16px;
+        content: ">";
+        position: absolute;
+      }
+    }
+  }
+}
+
+.greeting {
+  flex: 1;
+  text-align: right;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.14);
+
+  h1 {
+    margin: 0;
+  }
+}

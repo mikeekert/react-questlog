@@ -1,0 +1,16 @@
+.header-container {
+  padding: 10px 0;
+  background-color: #004257;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  color: #eee;
+  box-sizing: border-box;
+
+  .title-container h1 {
+    font-size: 55px;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 7px 5px rgba(0, 0, 0, 0.6);
+  }
+}

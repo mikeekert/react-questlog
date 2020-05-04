@@ -1,0 +1,47 @@
+.Login {
+  .loginFormHome {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 225px;
+  }
+
+  .gifContainer {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.65);
+  }
+
+  .easter {
+    max-width: 25px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    padding: 0;
+  }
+
+  .easter > img {
+    position: initial;
+    padding: 0;
+    width: 100%;
+  }
+
+  button {
+    font-family: "press_start_kregular", serif;
+    font-size: 30px;
+    text-shadow: 3px 2px rgba(0, 166, 232, 0.51);
+    background-color: #262524;
+    padding: 10px 0;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+
+    &.loginHome {
+      border: 3px white solid;
+    }
+  }
+
+  button:focus {
+    outline-color: transparent;
+    outline-style: none;
+  }
+}
